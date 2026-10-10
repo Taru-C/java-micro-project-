@@ -1,0 +1,28 @@
+GAME HUB - RUN INSTRUCTIONS
+
+1. Open this Java-Microproject-main folder in VS Code.
+2. Open Terminal.
+3. Compile each game once:
+
+Minesweeper:
+cd Minesweeper
+javac -d bin src\App.java src\Minesweeper.java
+
+PacMan:
+cd ..\PacMan
+javac -d bin src\App.java src\PacMan.java
+Copy-Item src\images bin\images -Recurse -Force
+
+Space Invaders:
+cd ..\SpaceInvaders
+javac -d bin src\App.java src\SpaceInvaders.java
+Copy-Item src\*.png bin\ -Force
+
+4. Return to the project root:
+cd ..
+5. Start the Game Hub:
+node server.js
+6. Open http://localhost:3000
+7. Click Games, then PLAY on any game.
+
+The Java games launch in their own windows. Keep the server terminal running while using the Game Hub.
